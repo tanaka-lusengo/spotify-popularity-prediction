@@ -2,7 +2,10 @@
 
 This project uses machine learning techniques to predict the popularity of Spotify tracks based on various audio features. It also includes exploratory analysis to understand trends in music genres, artists, and other factors influencing track popularity.
 
-You can also find the analysis live on [Kaggle](https://www.kaggle.com/code/tanakalusengo/spotify-popularity-classification-models/notebook#Spotify---Popularity-Classification). 
+You can also find the analysis live on [Kaggle](https://www.kaggle.com/code/tanakalusengo/spotify-popularity-classification-models/notebook#Spotify---Popularity-Classification) which has (at the time of writing) accumulated over 2000+ views and 25 upvotes ✌🏾
+
+<img width="1705" height="777" alt="Screenshot 2025-11-12 at 07 30 53" src="https://github.com/user-attachments/assets/ea227c33-9ec3-49e9-b11c-80520434a019" />
+
 
 ---
 
