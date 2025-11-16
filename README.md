@@ -25,9 +25,9 @@ You can also find the analysis live on [Kaggle](https://www.kaggle.com/code/tana
 
 This project aims to predict the popularity of songs using classification models such as:
 
-- Linear Regression
+- Linear Regression (used for predicting popularity labels)
 - Decision Tree Classifier
-- Naive Bayes
+- Naive Bayes Classifier
 
 ### Key Questions Addressed:
 
@@ -74,7 +74,7 @@ Acknowledgements:
 - Models tested:
   - Linear Regression
   - Decision Tree Classifier
-  - Naive Bayes
+  - Naive Bayes Classifier
 
 ---
 
@@ -93,18 +93,19 @@ Acknowledgements:
 2. **Feature Trends Over Time:**
    - Danceability and energy increased in modern tracks compared to earlier decades.
    - Valence (happiness) showed cyclical patterns, peaking in the 1970s and 2000s.
-3. **Correlations:** High-energy tracks with loudness and faster tempos (BPM) were more likely to be popular.
+4. **Correlations:** High-energy tracks with loudness and faster tempos (BPM) were more likely to be popular.
 
 ### Model Performance
 
-| Model                    | Accuracy (Test Set) | Cross-Validation Score |
-| ------------------------ | ------------------- | ---------------------- |
-| Linear Regression        | 72.3%               | 70.8%                  |
-| Decision Tree Classifier | 76.5%               | 74.1%                  |
-| Naive Bayes              | 68.9%               | 67.5%                  |
+| Model                    | Accuracy (Test Set)  | Cross-Validation Score  |
+| ------------------------ | -------------------- | ----------------------- |
+| Linear Regression        | ~69%                 | ~68%                    |
+| Decision Tree Classifier | ~76%                 | ~74%                    |
+| Naive Bayes              | ~65%                 | ~64%                    |
 
-- The **Decision Tree Classifier** outperformed other models due to its ability to handle complex relationships among features.
-- Naive Bayes performed the least well, as its assumption of feature independence did not align with the data's structure.
+- The **Decision Tree Classifier** outperformed other models due to its ability to handle complex relationships among features and generalization.
+- **Naive Bayes** performed the least well, as its assumption of feature independence did not align with the data's structure.
+- **Linear Regression**, though not a classifier by design, provided a useful baseline when adapted to categorical labels.
 
 ---
 
@@ -113,10 +114,12 @@ Acknowledgements:
 1. **Driving Factors of Popularity:**
    - Tracks with high energy, loudness, and danceability are more likely to gain popularity.
    - Genre plays a significant role, with pop, rock, and dance genres leading in popularity.
+  
 2. **Model Insights:**
 
    - Decision Tree Classifier is effective for identifying key attributes that contribute to popularity.
    - Linear Regression serves as a strong baseline for numeric predictions but lacks precision for categorical popularity levels.
+   - Naive Bayes struggles with correlated audio features.
 
 3. **Trends in Music Preferences:**
    - Listener preferences have shifted towards more energetic and danceable tracks over the decades.
